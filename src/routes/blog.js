@@ -3,7 +3,7 @@ const router = express.Router();
 const { readAllBlogs, createNewBlog } = require("../controllers/blog");
 
 router.get("/", readAllBlogs);
-router.post("/newBlog", createNewBlog);
+router.post("/new", createNewBlog);
 
 // delete and update
 
